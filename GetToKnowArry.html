@@ -1,0 +1,1673 @@
+<!--
+============================================================
+ARRY PORTFOLIO
+Muhammad Arry Nugroho | Geophysical Engineering
+
+QUICK EDIT GUIDE
+------------------------------------------------------------
+1. HERO
+   - Name, headline, profile photo
+
+2. ABOUT ME
+   - Personal introduction and interests
+
+3. EDUCATION
+   - ITB, GPA, thesis, academic achievement
+
+4. EXPERIENCE
+   - ANTAM
+   - Seismic Reflection Acquisition
+   - Geophysics Practicum Assistant
+   - Aquifer Mapping Project
+
+5. ORGANIZATION
+   - HIMA TG "TERRA" ITB
+   - SEG Student Chapter ITB
+
+6. PROJECTS
+   - Selected technical projects
+
+7. TECHNICAL SKILLS
+   - Technical skills / software / methods
+
+8. TRAINING & CERTIFICATION
+   - Python Programming Bootcamp
+   - EF SET English Certificate
+
+9. CONTACT
+   - Email, LinkedIn, CV
+
+IMAGE FOLDER
+------------------------------------------------------------
+Put your images inside:
+    images/
+
+The HTML already contains the expected filenames next to
+each image reference, so you can replace the placeholder
+files without changing the page structure.
+
+IMPORTANT
+------------------------------------------------------------
+The page content and wording have been kept from the
+previous version. This revision mainly reorganizes the
+source structure and adds clear comments so it is easier
+to maintain.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+ &lt;!-- MULTI-ROLE UPDATE: Practicum Assistant has two roles; SEG has two roles; CDT added. --&gt;
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Muhammad Arry Nugroho | Geophysical Engineering
+  </title>
+  <style>
+   :root{--bg:#07111f;--card:#0e1d2d;--text:#edf5fa;--muted:#9caebe;--accent:#58c9dc;--border:#1d3448}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}a{color:inherit;text-decoration:none}.container{width:min(1150px,92%);margin:auto}section{padding:100px 0}nav{position:fixed;top:0;width:100%;z-index:10;background:#07111fee;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff0d}.navbar{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:20px;font-weight:800}.logo span,.eyebrow,.hero-eyebrow,.position,.project-tag,.experience-date,.thesis-label{color:var(--accent)}.nav-links{display:flex;gap:22px;font-size:14px;color:var(--muted)}.nav-links a:hover{color:var(--accent)}.hero{min-height:100vh;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center;padding-top:70px}.hero-eyebrow,.eyebrow{font-size:12px;letter-spacing:2px;font-weight:700;text-transform:uppercase}.hero h1{font-size:clamp(44px,7vw,78px);line-height:1;margin:18px 0}.hero h1 span{color:var(--accent)}.hero-description{color:var(--muted);max-width:650px;font-size:18px}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:11px 18px;border:1px solid var(--border);border-radius:8px;font-weight:700;font-size:14px}.btn-primary{background:var(--accent);color:#061018;border-color:var(--accent)}.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}.profile-frame{width:300px;height:360px;margin:auto;border:1px solid var(--border);border-radius:20px;overflow:hidden;background:var(--card)}.profile-frame img{width:100%;height:100%;object-fit:cover}.profile-placeholder{height:100%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:50px;font-weight:800}.section-title{margin-bottom:40px}.section-title h2{font-size:36px;margin-top:7px}.section-title p{color:var(--muted);max-width:700px;margin-top:8px}.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:60px}.about-photo{position:sticky;top:100px}.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;border:1px solid var(--border)}.about-text p{color:var(--muted);margin-bottom:18px}.interest-list,.skills{display:flex;flex-wrap:wrap;gap:10px}.interest,.skill{padding:8px 13px;border:1px solid var(--border);border-radius:20px;color:var(--accent);font-size:13px;background:var(--card)}.education-card,.experience-card,.organization-card,.project-card,.contact-box{background:var(--card);border:1px solid var(--border);border-radius:16px}.education-card{padding:32px}.education-header{display:flex;justify-content:space-between;gap:25px}.education-header p{color:var(--muted)}.gpa{text-align:right}.gpa strong{display:block;font-size:31px;color:var(--accent)}.gpa span{color:var(--muted);font-size:12px}.divider{height:1px;background:var(--border);margin:28px 0}.thesis-title{font-size:18px;margin-top:8px}.thesis-description{color:var(--muted);margin-top:10px}.experience-list{display:grid;gap:18px}.experience-main{padding:26px;display:grid;grid-template-columns:145px 1fr auto;gap:22px;align-items:start}.experience-date{font-size:12px;font-weight:700;letter-spacing:1px}.experience-role{color:var(--muted);font-size:14px}.experience-summary{color:var(--muted);font-size:14px;margin-top:6px}.more-btn{background:transparent;border:1px solid var(--border);color:var(--accent);padding:8px 13px;border-radius:7px;cursor:pointer;font-weight:700}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding-top:28px}.detail-text h4{color:var(--accent);margin-bottom:8px}.detail-text p{color:var(--muted);font-size:14px}.detail-image{min-height:230px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#091522}.detail-image img{width:100%;height:100%;object-fit:cover}.image-placeholder{min-height:230px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}.organization-grid,.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.organization-card,.project-card{padding:26px}.period{color:var(--muted);font-size:12px}.organization-card p,.project-card p{color:var(--muted);font-size:14px;margin-top:12px}.project-card{transition:.2s}.project-card:hover{transform:translateY(-3px);border-color:var(--accent)}.project-tag{font-size:11px;font-weight:700;letter-spacing:1px}.project-card h3{margin:7px 0}.contact-box{padding:40px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact-box p{color:var(--muted);margin-top:8px}.contact-links{display:flex;gap:10px;flex-wrap:wrap}footer{padding:32px 0;border-top:1px solid var(--border);color:var(--muted);font-size:13px}.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}@media(max-width:850px){.nav-links{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-profile{order:-1}.about-photo{position:static;max-width:350px}.organization-grid,.project-grid{grid-template-columns:1fr}.experience-main{grid-template-columns:1fr}.detail-grid{grid-template-columns:1fr}.contact-box{flex-direction:column;align-items:flex-start}}@media(max-width:550px){section{padding:75px 0}.education-header{flex-direction:column}.gpa{text-align:left}.profile-frame{width:240px;height:300px}}
+
+.institution-logo,.timeline-logo,.org-logo{background:#091522;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.institution-logo{width:68px;height:68px}.timeline-logo{width:78px;height:62px;margin-bottom:7px}.org-logo{width:66px;height:66px}
+.institution-logo img,.timeline-logo img,.org-logo img{width:100%;height:100%;object-fit:contain}
+.org-head{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center}
+.more-row{margin-top:14px}.training-more{margin-top:16px}
+.training-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.training-card{padding:26px;background:var(--card);border:1px solid var(--border);border-radius:16px}
+.training-card p{color:var(--muted);font-size:14px;margin-top:8px}.training-label{font-size:11px;letter-spacing:1px;font-weight:800}
+.expand-panel{display:none}.expand-panel.active{display:block}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding-top:22px;align-items:start;}.detail-text h4{color:var(--accent);margin-bottom:8px}.detail-text p{color:var(--muted);font-size:14px}
+.detail-image{width: 100%;height:auto!important;min-height: 0 !important;max-height: none;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#091522;align-self:start;}.detail-image img{width:100%;height:auto;object-fit:contain;display:block}
+.image-placeholder{min-height:220px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;text-align:center;padding:15px}
+
+.experience-card > .expand-panel{padding:0 26px 28px;border-top:1px solid var(--border)}
+.experience-card > .expand-panel .detail-grid{padding-top:28px}
+
+/* ==========================
+   EDUCATION STRUCTURE
+========================== */
+.education-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.education-info{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-width:0;
+}
+
+.institution-logo{
+    width:90px;
+    height:90px;
+    flex:0 0 90px;
+    background:#091522;
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.institution-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.institution-details{
+    min-width:0;
+}
+
+.institution-details h3{
+    margin-bottom:2px;
+}
+
+/* ==========================
+   EXPERIENCE STRUCTURE
+========================== */
+.experience-card > .expand-panel{
+    padding:0 26px 28px;
+    border-top:1px solid var(--border);
+}
+
+/* ==========================
+   SHARED MORE / LESS PANELS
+========================== */
+.expand-panel{
+    display:none;
+}
+
+.expand-panel.active{
+    display:block;
+}
+
+/* ==========================
+   RESPONSIVE EDUCATION
+========================== */
+@media(max-width:550px){
+    .education-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .gpa{
+        text-align:left;
+    }
+}
+  
+/* ==========================
+   EXPERIENCE LOGO & YEAR
+========================== */
+.experience-main{
+    grid-template-columns:110px minmax(0,1fr) auto;
+    gap:14px;
+}
+
+.experience-date{
+    width:110px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:center;
+}
+
+.experience-date .timeline-logo{
+    width:92px;
+    height:82px;
+    margin:0 auto 8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#091522;
+    border:1px solid var(--border);
+    border-radius:14px;
+    overflow:hidden;
+}
+
+.experience-date .timeline-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.experience-date .timeline-year{
+    width:100%;
+    text-align:center;
+    color:var(--accent);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1px;
+    line-height:1.4;
+}
+
+@media(max-width:850px){
+    .experience-main{
+        grid-template-columns:110px minmax(0,1fr);
+        gap:14px;
+    }
+}
+
+@media(max-width:550px){
+    .experience-main{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .experience-date{
+        width:100%;
+        align-items:flex-start;
+        text-align:left;
+    }
+
+    .experience-date .timeline-logo{
+        margin-left:0;
+    }
+
+    .experience-date .timeline-year{
+        width:92px;
+        text-align:center;
+    }
+}
+
+
+/* ==========================
+   MULTI-ROLE EXPERIENCE / ORGANIZATION
+========================== */
+.experience-detail-item{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    padding:28px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.experience-detail-item:last-child{
+    border-bottom:0;
+    padding-bottom:0;
+}
+
+.experience-detail-item .detail-text h4{
+    color:var(--accent);
+    margin-bottom:10px;
+}
+
+.experience-detail-item .detail-text p{
+    color:var(--muted);
+    font-size:14px;
+    margin-top:10px;
+}
+
+@media(max-width:700px){
+    .experience-detail-item{
+        grid-template-columns:1fr;
+    }
+}
+  
+/* ==========================
+   DOCUMENTATION CAROUSEL
+========================== */
+.documentation-carousel{
+    display:grid;
+    grid-template-columns:56px minmax(0,1fr) 56px;
+    gap:18px;
+    align-items:center;
+    margin-top:28px;
+}
+
+.documentation-frame{
+    position:relative;
+    width:100%;
+    height:480px;
+    background:#091522;
+    border:1px solid var(--border);
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.documentation-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:opacity .25s ease;
+}
+
+.documentation-placeholder{
+    position:absolute;
+    inset:0;
+    align-items:center;
+    justify-content:center;
+    color:var(--muted);
+    font-size:13px;
+    text-align:center;
+    padding:20px;
+}
+
+.documentation-arrow{
+    width:52px;
+    height:52px;
+    border:1px solid var(--border);
+    border-radius:50%;
+    background:#091522;
+    color:var(--text);
+    font-size:32px;
+    line-height:1;
+    cursor:pointer;
+    transition:all .2s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.documentation-arrow:hover{
+    border-color:var(--accent);
+    color:var(--accent);
+    transform:scale(1.06);
+}
+
+.documentation-caption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+    background:linear-gradient(transparent,rgba(3,10,18,.9));
+    color:#fff;
+    font-size:13px;
+}
+
+.documentation-caption span:last-child{
+    color:var(--accent);
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+@media(max-width:700px){
+    .documentation-carousel{
+        grid-template-columns:42px minmax(0,1fr) 42px;
+        gap:8px;
+    }
+
+    .documentation-frame{
+        height:340px;
+        border-radius:14px;
+    }
+
+    .documentation-arrow{
+        width:40px;
+        height:40px;
+        font-size:25px;
+    }
+}
+  
+/* ==========================
+   IMAGE LIGHTBOX
+========================== */
+.zoomable-image{
+    cursor:zoom-in;
+    transition:transform .2s ease,filter .2s ease;
+}
+.zoomable-image:hover{
+    transform:scale(1.015);
+    filter:brightness(1.06);
+}
+.image-lightbox{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:32px;
+    background:rgba(2,8,15,.94);
+    backdrop-filter:blur(8px);
+}
+.image-lightbox.active{display:flex}
+.image-lightbox>img{
+    max-width:92vw;
+    max-height:88vh;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.14);
+    box-shadow:0 20px 70px rgba(0,0,0,.45);
+}
+.lightbox-close{
+    position:absolute;
+    top:20px;
+    right:24px;
+    width:46px;
+    height:46px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:50%;
+    background:rgba(9,21,34,.9);
+    color:#fff;
+    font-size:30px;
+    line-height:1;
+    cursor:pointer;
+}
+.lightbox-close:hover{color:var(--accent);border-color:var(--accent)}
+.lightbox-caption{
+    position:absolute;
+    left:50%;
+    bottom:22px;
+    transform:translateX(-50%);
+    max-width:80vw;
+    color:#dbe7f3;
+    font-size:13px;
+    text-align:center;
+    padding:8px 14px;
+    border-radius:999px;
+    background:rgba(9,21,34,.88);
+    border:1px solid rgba(255,255,255,.12);
+}
+@media(max-width:600px){
+    .image-lightbox{padding:18px}
+    .image-lightbox>img{max-width:96vw;max-height:82vh}
+    .lightbox-close{top:12px;right:12px}
+}
+/* ==========================
+   TECHNICAL SKILLS MORE PANEL
+========================== */
+.skills-more{
+    margin-top:24px;
+    padding-top:28px;
+    border-top:1px solid var(--border);
+}
+.skill-detail-group{
+    margin-bottom:28px;
+}
+.skill-detail-group:last-child{
+    margin-bottom:0;
+}
+.skill-detail-group h4{
+    color:var(--accent);
+    margin-bottom:12px;
+    font-size:15px;
+}
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.skill-tags span{
+    display:inline-flex;
+    align-items:center;
+    padding:8px 13px;
+    border:1px solid var(--border);
+    border-radius:20px;
+    color:var(--muted);
+    font-size:13px;
+    background:var(--card);
+}
+
+.justify{
+    text-align:justify;
+
+}
+  </style>
+  <meta content="Edit images in images/. Main sections: Hero, About, Education, Experience, Organization, Projects, Technical Skills, Training &amp; Certification, Contact." name="portfolio-structure"/>
+ </head>
+ <body>
+  <nav>
+   <div class="container navbar">
+    <a class="logo" href="#home">
+     GetToKnowArry
+     <span>
+      .
+     </span>
+    </a>
+    <div class="nav-links">
+     <a href="#about">
+      About
+     </a>
+     <a href="#education">
+      Education
+     </a>
+     <a href="#experience">
+      Experience
+     </a>
+     <a href="#organization">
+      Organization
+     </a>
+     <a href="#projects">
+      Projects
+     </a>
+     <a href="#training">
+      Training &amp; Certification
+     </a>
+     <a href="#documentation">
+      Documentation
+     </a>
+     <a href="#contact">
+      Contact
+     </a>
+    </div>
+   </div>
+  </nav>
+  <!-- ===================== HERO / LANDING ===================== -->
+  <section class="hero" id="home">
+   <div class="container hero-grid reveal">
+    <div>
+     <div class="hero-eyebrow">
+      Geophysical Engineering &middot; ITB
+     </div>
+     <h1>
+      Muhammad
+      <span>
+       Arry
+      </span>
+      <br/>
+      Nugroho
+     </h1>
+     <p class="hero-description">
+      Geophysical Engineering graduate with interests in energy exploration, drilling related, logging, seismic interpretation, geomechanics, and subsurface characterization.
+     </p>
+     <div class="buttons">
+      <a class="btn btn-primary" href="#projects">
+       Explore My Work
+      </a>
+      <a class="btn btn-secondary" href="#contact">
+       Let's Connect
+      </a>
+     </div>
+    </div>
+    <div>
+     <div class="profile-frame">
+      <img alt="Muhammad Arry Nugroho" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/profile1.jpeg"/>
+      <div class="profile-placeholder" style="display:none">
+       YOUR PHOTO
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- ===================== ABOUT ME ===================== -->
+  <section id="about">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      01 &middot; About Me
+     </div>
+     <h2>
+      From Field to Subsurface
+     </h2>
+    </div>
+    <div class="about-grid">
+     <div class="about-photo">
+      <img alt="Muhammad Arry Nugroho" src="images/profile2.jpeg"/>
+     </div>
+     <div class="about-text">
+      <p class="justify">
+       I am a Geophysical Engineering graduate from the Bandung Institute of Technology (ITB) with a strong interest in energy exploration, particularly in the oil and gas industry. My primary interests lie in seismic interpretation and geomechanics, with a focus on understanding subsurface conditions and their implications for exploration and drilling.
+      </p>
+      <p class="justify">
+       My academic and project experience has provided me with a strong foundation in seismic methods, including seismic acquisition, processing, and interpretation, as well as geophysical methods such as geoelectrics, magnetotellurics (MT), electromagnetics, and gravity.
+      </p>
+      <p class="justify">
+       My thesis, titled
+       <strong>
+        &ldquo;Pore Pressure Prediction and Overpressure Zone Characterization in the Poseidon Field, Browse Basin, Australia using Eaton and Kan &amp; Swan Methods through Well Log and Seismic Data Integration,&rdquo;
+       </strong>
+       focused on delineating overpressure zones through the integration of well log and seismic data. This work strengthened my interest in pore pressure prediction, geomechanics, rock physics, and seismic interpretation, particularly in their applications to subsurface characterization and drilling-related challenges.
+      </p>
+      <p class="justify">
+       I am passionate about continuously developing my technical skills and staying informed about the evolving challenges and technologies within the energy industry. I thrive in multidisciplinary environments, enjoy working collaboratively, and am committed to continuous learning and delivering practical, data-driven solutions.
+      </p>
+      <p class="justify">
+       I aspire to build my career in seismic interpretation and geomechanics within the energy industry, contributing to safer, more efficient, and better-informed subsurface exploration and development.
+      </p>
+      <div class="interest-list">
+       <div class="interest">
+        Seismic Interpretation
+       </div>
+       <div class="interest">
+        Geomechanics
+       </div>
+       <div class="interest">
+        Pore Pressure
+       </div>
+       <div class="interest">
+        Rock Physics
+       </div>
+       <div class="interest">
+        Subsurface Characterization
+       </div>
+       <div class="interest">
+        Energy Exploration
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      02 &middot; Education
+     </div>
+     <h2>
+      Academic Background
+     </h2>
+    </div>
+    <div class="education-card">
+     <div class="education-header">
+      <div class="education-info">
+       <div class="institution-logo">
+        <img alt="ITB Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/itb-logo.png"/>
+        <div class="image-placeholder" style="display:none">
+         ITB LOGO
+        </div>
+       </div>
+       <div>
+        <h3>
+         Institut Teknologi Bandung
+        </h3>
+        <p>
+         Bachelor of Geophysical Engineering
+        </p>
+        <p>
+         Faculty of Mining and Petroleum Engineering
+        </p>
+        <p>
+         Expected Graduation &middot; October 2026
+        </p>
+       </div>
+      </div>
+      <div class="gpa">
+       <strong>
+        3.38 / 4.00
+       </strong>
+       <span>
+        Current GPA
+       </span>
+      </div>
+     </div>
+     <div class="divider">
+     </div>
+     <div>
+      <div class="thesis-label">
+       Undergraduate Thesis
+      </div>
+      <div class="thesis-title">
+       Pore Pressure Prediction and Overpressure Zone Characterization in the Poseidon Field, Browse Basin, Australia using Eaton and Kan &amp; Swan Methods through Well Log and Seismic Data Integration
+      </div>
+      <p class="thesis-description">
+       This research focuses on predicting pore pressure and delineating overpressure zones by integrating well log and seismic data, strengthening my understanding of pore pressure prediction, geomechanics, rock physics, and seismic interpretation.
+      </p>
+      <div class="more-row">
+       <button class="more-btn" onclick="togglePanel('thesis-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="thesis-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Thesis Overview
+         </h4>
+         <p class="justify">
+          This study integrates well log and seismic data to predict pore pressure and delineate overpressure zones in the Poseidon Field, Browse Basin, Australia, using Eaton and Kan &amp; Swan methods. Accurate pore pressure prediction is critical for safe and efficient drilling operations, as inaccurate estimates can lead to drilling hazards such as kicks, blowouts, and wellbore instability, as well as significant time and cost losses. In addition, effective well planning requires understanding the lateral distribution of pore pressure, not just relying on measurements from existing wells. To address this, my research integrated well-based pore pressure estimation with seismic-derived Vp and density volumes from simultaneous seismic inversion to characterize and map overpressure zones across the Poseidon Field. I also compared the Eaton and Kan & Swan methods to assess the consistency and reliability of their pore pressure predictions after well-level calibration. This research has strengthened my interest in drilling engineering, wellbore geomechanics, and mud engineering, particularly in understanding how subsurface pressure and rock properties influence drilling performance and wellbore stability. I am also still deeply interested in seismic interpretation and rock physics, especially in how seismic and well data integration can be used to better characterize pore pressure and support safer, more efficient drilling decisions.The work strengthened my understanding of pore pressure prediction, geomechanics, rock physics, seismic interpretation, and drilling-related subsurface challenges.
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="Thesis documentation" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/thesis.jpg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/thesis.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="divider">
+     </div>
+     <div>
+      <div class="thesis-label">
+       Academic Achievement
+      </div>
+      <p class="thesis-description">
+       Dean's List Award for achieving a perfect 4.00 / 4.00 semester GPA in both Semester 1 and Semester 2 of the 2025/2026 Academic Year.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      03 &middot; Experience
+     </div>
+     <h2>
+      Experience &amp; Field Work
+     </h2>
+     <p>
+      Selected experiences in geophysical acquisition, processing, research, and teaching.
+     </p>
+    </div>
+    <div class="experience-list">
+     <!-- EXPERIENCE ITEM -->
+     <div class="experience-card">
+      <div class="experience-main">
+       <div class="experience-date">
+        <div class="timeline-logo">
+         <img alt="ANTAM Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/antam-logo.png"/>
+         <div class="image-placeholder" style="display:none">
+          ANTAM
+         </div>
+        </div>
+        2025
+       </div>
+       <div>
+        <h3>
+         PT Antam Tbk
+        </h3>
+        <div class="experience-role">
+         Geophysical Intern
+        </div>
+        <p class="experience-summary">
+         Conducted drone-based magnetic acquisition and end-to-end geophysical data processing.
+        </p>
+       </div>
+       <button class="more-btn" onclick="togglePanel('antam',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="antam">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          DroneMagnetic Acquisition &amp; Processing
+         </h4>
+         <p>
+          Conducted drone-based magnetic data acquisition using DJI Matrice 300/350 RTK integrated with Geometrics MagArrow II.
+         </p>
+         <br/>
+         <p>
+          Performed diurnal correction, IGRF correction, tie-line correction, gap adjustment, B-spline filtering, tie-line levelling, and microlevelling to produce Total Magnetic Intensity maps.
+         </p>
+         <br/>
+         <p>
+          <strong>
+           Key Skills:
+          </strong>
+          Data Acquisition &middot; Data Processing &middot; QC &middot; Magnetic Interpretation &middot; Field Operations
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="ANTAM internship" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/antam-1.png" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/antam-1.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- EXPERIENCE ITEM -->
+     <div class="experience-card">
+      <div class="experience-main">
+       <div class="experience-date">
+        <div class="timeline-logo">
+         <img alt="Seismic Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/itb-logo.png"/>
+         <div class="image-placeholder" style="display:none">
+          SEISMIC
+         </div>
+        </div>
+        2024
+       </div>
+       <div>
+        <h3>
+         Seismic Reflection Acquisition
+        </h3>
+        <div class="experience-role">
+         Geophysical Field Project
+        </div>
+        <p class="experience-summary">
+         Participated in seismic reflection acquisition using a weight-drop seismic source across five survey lines.
+        </p>
+       </div>
+       <button class="more-btn" onclick="togglePanel('seismic',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="seismic">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Seismic Field Acquisition
+         </h4>
+         <p class="justify">
+          Participated in seismic reflection acquisition across five survey lines and supported field logistics. From this activity I was given more opportunities to understand how the process of acquiring reflection seismic data using a wave generation instrument, namely AWD (Accelerated Weight Drop) which has a basic principle based on simple kinetic energy where the heavier the load and the higher the load is lifted, when the load falls down and hits the iron plate, the energy generated by the impact will be channeled down the surface evenly, after which the waves will be channeled and recorded by geophones that have been installed along the track. The result of this activity is a recording or shot gather of the seismic waves which, after data processing, shows the subsurface conditions of the ITB Cirebon campus related to the structure of the layers, as well as any anomalies that exist in the subsurface.
+         </p>
+         <br/>
+         <p>
+          <strong>
+           Key Skills:
+          </strong>
+          Seismic Acquisition &middot; Field Operations &middot; Equipment Handling &middot; Data Quality
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="Seismic acquisition" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/seismic-1.jpeg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/seismic-1.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- EXPERIENCE ITEM -->
+     <div class="experience-card">
+      <div class="experience-main">
+       <div class="experience-date">
+        <div class="timeline-logo">
+         <img alt="Geophysics Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/itb-logo.png"/>
+         <div class="image-placeholder" style="display:none">
+          GEOPHYSICS
+         </div>
+        </div>
+        2024 &mdash; 2026
+       </div>
+       <div>
+        <h3>
+         Geophysics Practicum Assistant
+        </h3>
+        <div class="experience-role">
+         Institut Teknologi Bandung &middot; Practicum Assistant
+        </div>
+        <p class="experience-summary">
+         Served as a practicum assistant in Geophysical Instrumentation 1 (2024) and Seismology (2025).
+        </p>
+       </div>
+       <button class="more-btn" onclick="togglePanel('assistant',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="assistant">
+       <div class="experience-detail-item">
+        <div class="detail-text">
+         <h4>
+          Practicum Assistant - Geophysical Instrumentation 1
+         </h4>
+         <p class="justify">
+          2024 &middot; Assisted students during practical sessions on geophysical instrumentation and supported hands-on activities involving instrument design, construction, and measurement workflows, also facilitating practitioners in understanding:
+         </p>
+         <p>
+          • Basic configuration of instrumentation system
+         <p>
+          • Instrumentation characteristics
+         </p>
+         <p>
+          • Components of instrumentation
+         </p>
+         <p>
+          • Properties of electronic instrumentation. 
+         </p>
+         <p class="justify">
+          and ends with guiding practitioners in making basic geophysical instrumentation projects. making basic geophysical instrumentation projects with IoT devices such as ESP32 integrated with sensors.
+         </p>
+         <p class="justify">
+          Strengthened technical communication, troubleshooting, and the ability to guide students through practical engineering and geophysical instrumentation tasks.
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="Geophysical Instrumentation 1 practicum" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/assistant-instrumentation.jpeg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/assistant-instrumentation.jpeg
+         </div>
+        </div>
+       </div>
+       <div class="experience-detail-item">
+        <div class="detail-text">
+         <h4>
+          Practicum Assistant - Seismology
+         </h4>
+         <p class="justify">
+          2025 &middot; Guided students through hands-on passive seismic analysis, Responsible for teaching the application of seismology such as data processing and modeling:
+         </p>
+         <p>
+          • Picking earthquake waves (P and S waves)
+         </p>
+         <p>
+          • Determine the hypocenter
+         </p>
+         <p>
+          • Application of the Wadatti diagram and the Jeffrey Bullens curve
+         </p>
+         <p>
+          • Determining the magnitude of the earthquake
+         </p>
+         <p>
+          • Modelling a focal mechanism
+         </p>
+         <p>
+          • Application of Python in seismic data processing and modeling
+         </p>
+         <p class="justify">
+          Developed stronger communication, problem-solving, and technical mentoring skills while supporting students in seismic data analysis.
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="Seismology practicum" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/assistant-seismology.jpeg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/assistant-seismology.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- EXPERIENCE ITEM -->
+     <div class="experience-card">
+      <div class="experience-main">
+       <div class="experience-date">
+        <div class="timeline-logo">
+         <img alt="Aquifer Mapping Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/itb-logo.png"/>
+         <div class="image-placeholder" style="display:none">
+          AQUIFER
+         </div>
+        </div>
+        2024
+       </div>
+       <div>
+        <h3>
+         Aquifer Mapping Project
+        </h3>
+        <div class="experience-role">
+         Geophysical Field Project &middot; Team Leader
+        </div>
+        <p class="experience-summary">
+         Led a 15-member field team during an aquifer mapping project using resistivity methods.
+        </p>
+       </div>
+       <button class="more-btn" onclick="togglePanel('aquifer',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="aquifer">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Resistivity-Based Aquifer Mapping
+         </h4>
+         <p>
+          Coordinated field activities, equipment preparation, data acquisition, and equipment safety.
+         </p>
+         <br/>
+         <p class="justify">
+          Led a field team of 15 members in conducting resistivity surveys using a McOHM resistivity meter to map groundwater distribution in a rural village. Demonstrated decisive leadership under extreme field conditions by implementing real-time equipment safety protocols, ensuring both data quality and instrument integrity throughout the survey.
+         </p>
+         <br/>
+         <p>
+          <strong>
+           Key Skills:
+          </strong>
+          Team Leadership &middot; Resistivity &middot; Field Logistics &middot; Data Quality &middot; Safety
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="Aquifer mapping" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/aquifer-1.jpeg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/aquifer-1.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- ===================== ORGANIZATION ===================== -->
+  <section id="organization">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      04 &middot; Organization
+     </div>
+     <h2>
+      Leadership &amp; Organization
+     </h2>
+    </div>
+    <div class="organization-grid">
+     <!-- ORGANIZATION ITEM -->
+     <div class="organization-card">
+      <div class="org-head">
+       <div class="org-logo">
+        <img alt="TERRA Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/terra-logo.jpg"/>
+        <div class="image-placeholder" style="display:none">
+         TERRA
+        </div>
+       </div>
+       <div>
+        <h3>
+         HIMA TG &ldquo;TERRA&rdquo; ITB
+        </h3>
+        <div class="position">
+         Head of Interest &amp; Talent Division
+        </div>
+        <div class="period">
+         2025 &mdash; 2026
+        </div>
+       </div>
+      </div>
+      <p>
+       Led the Interest and Talent Division and designed programs to support student development, interests, and technical and professional growth.
+      </p>
+      <div class="more-row">
+       <button class="more-btn" onclick="togglePanel('terra-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="terra-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Leadership &amp; Program Development
+         </h4>
+         <p>
+          Led the Interest and Talent Division, coordinating programs, communication, event execution, and collaboration to support student development.
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="TERRA activity" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/terra-activity.jpeg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/terra-activity.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- ORGANIZATION ITEM -->
+     <div class="organization-card">
+      <div class="org-head">
+       <div class="org-logo">
+        <img alt="SEG Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/seg-logo.png"/>
+        <div class="image-placeholder" style="display:none">
+         SEG
+        </div>
+       </div>
+       <div>
+        <h3>
+         SEG Student Chapter ITB
+        </h3>
+        <div class="position">
+         Staff of Research &amp; Competition &middot; Manager, Field Trip Division
+        </div>
+        <div class="period">
+         2023 &middot; 2024
+        </div>
+       </div>
+      </div>
+      <p>
+       Served in two roles within SEG Student Chapter ITB, contributing to research and competition activities and later managing the Field Trip Division.
+      </p>
+      <div class="more-row">
+       <button class="more-btn" onclick="togglePanel('seg-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="seg-more">
+       <div class="experience-detail-item">
+        <div class="detail-text">
+         <h4>
+          Staff of Research &amp; Competition
+         </h4>
+         <p class="justify">
+          2023 &middot; Supported research and competition activities within SEG Student Chapter ITB, contributing to academic and professional development initiatives for geophysics students.
+         </p>
+         <p class="justify">
+          Worked collaboratively in organizing activities and supporting participants throughout preparation and execution.
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="SEG Research and Competition activity" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/seg-research-competition.png" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/seg-research-competition.jpeg
+         </div>
+        </div>
+       </div>
+       <div class="experience-detail-item">
+        <div class="detail-text">
+         <h4>
+          Manager, Field Trip Division
+         </h4>
+         <p class="justify">
+          2024 &middot; Managed the Field Trip Division and coordinated industry exposure programs including SEG Field Camp, Company Visit, and Excursion.
+         </p>
+         <p class="justify">
+          Facilitated direct exposure to professional geophysical environments through structured field activities involving students and external industry partners.
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="SEG Field Trip activity" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/seg-field-trip.jpeg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/seg-field-trip.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="organization-card">
+      <div class="org-head">
+       <div class="org-logo">
+        <img alt="Character Development Training ITB Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="images/cdt-itb-logo.png"/>
+        <div class="image-placeholder" style="display:none">
+         CDT ITB
+        </div>
+       </div>
+       <div>
+        <h3>
+         Character Development Training ITB 2024/2025
+        </h3>
+        <div class="position">
+         Trainer &amp; Mentor
+        </div>
+        <div class="period">
+         2024 &mdash; 2025
+        </div>
+       </div>
+      </div>
+      <p>
+       Served as a trainer and mentor for incoming students, supporting their transition to the university environment through structured development sessions.
+      </p>
+      <div class="more-row">
+       <button class="more-btn" onclick="togglePanel('cdt-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="cdt-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Trainer &amp; Mentor
+         </h4>
+         <p class="justify">
+          2024&ndash;2025 &middot; Served as a trainer and mentor for 40 incoming students in ITB's Character Development Training.
+         </p>
+         <p class="justify">
+          Delivered sessions on adaptation, integrity, and university life to support new students' transition into the university environment.
+         </p>
+        </div>
+        <div class="detail-image">
+         <img alt="Character Development Training ITB activity" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/cdt-itb-activity.jpeg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/cdt-itb-activity.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      05 &middot; Projects
+     </div>
+     <h2>
+      Selected Projects
+     </h2>
+    </div>
+    <div class="project-grid">
+     <!-- PROJECT ITEM -->
+     <div class="project-card">
+      <div class="project-tag">
+       SUBSURFACE &middot; THESIS
+      </div>
+      <h3>
+       Pore Pressure &amp; Overpressure Characterization
+      </h3>
+      <p>
+       Well log and seismic data integration for pore pressure prediction and overpressure zone characterization in the Poseidon Field.
+      </p>
+     </div>
+     <!-- PROJECT ITEM -->
+     <div class="project-card">
+      <div class="project-tag">
+       MAGNETIC &middot; INTERNSHIP
+      </div>
+      <h3>
+       DroneMagnetic Survey
+      </h3>
+      <p>
+       UAV magnetic acquisition and processing using DJI Matrice 300/350 RTK and Geometrics MagArrow II.
+      </p>
+     </div>
+     <!-- PROJECT ITEM -->
+     <div class="project-card">
+      <div class="project-tag">
+       INSTRUMENTATION
+      </div>
+      <h3>
+       IoT-Based Geophysical Instruments
+      </h3>
+      <p>
+       Development of an IoT-based seismometer and resistivity meter using ESP32 and geophysical sensors.
+      </p>
+     </div>
+     <!-- PROJECT ITEM -->
+     <div class="project-card">
+      <div class="project-tag">
+       FIELD SURVEY
+      </div>
+      <h3>
+       Gravity, Magnetic &amp; Resistivity Surveys
+      </h3>
+      <p>
+       Field acquisition, processing, and subsurface interpretation across multiple geophysical methods.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+    <!-- ===================== TECHNICAL SKILLS ===================== -->
+  <section id="skills">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      06 &middot; Skills
+     </div>
+     <h2>
+      Technical Skills
+     </h2>
+    </div>
+    <div class="skills">
+     <div class="skill">Seismic Acquisition</div>
+     <div class="skill">Seismic Processing</div>
+     <div class="skill">Seismic Interpretation</div>
+     <div class="skill">Subsurface Interpretation</div>
+     <div class="skill">Well Log Analysis</div>
+     <div class="skill">Pore Pressure Analysis</div>
+     <div class="skill">Geomechanics</div>
+     <div class="skill">Rock Physics</div>
+     <div class="skill">Magnetic Survey</div>
+     <div class="skill">Gravity Survey</div>
+     <div class="skill">Resistivity / ERT</div>
+     <div class="skill">Magnetotellurics</div>
+     <div class="skill">Field Operations</div>
+     <div class="skill">Data QC</div>
+    </div>
+
+    <div class="more-row">
+     <button class="more-btn" onclick="togglePanel('skills-more',this)">
+      MORE &darr;
+     </button>
+    </div>
+
+    <div class="expand-panel skills-more" id="skills-more">
+     <div class="skill-detail-group">
+      <h4>Seismic &amp; Interpretation</h4>
+      <div class="skill-tags">
+       <span>Seismic Attributes</span>
+       <span>AVO Analysis</span>
+       <span>Seismic Inversion</span>
+       <span>NMO &amp; Velocity Analysis</span>
+       <span>Migration</span>
+       <span>Deconvolution</span>
+       <span>Frequency Filtering</span>
+       <span>Well-Seismic Tie</span>
+      </div>
+     </div>
+
+     <div class="skill-detail-group">
+      <h4>Well &amp; Reservoir Analysis</h4>
+      <div class="skill-tags">
+       <span>Well Log Interpretation</span>
+       <span>NCT Analysis</span>
+       <span>Pore Pressure Prediction</span>
+       <span>PPFG Analysis</span>
+       <span>Archie &amp; Water Saturation</span>
+       <span>Fluid Substitution</span>
+      </div>
+     </div>
+
+     <div class="skill-detail-group">
+      <h4>Rock Physics &amp; Geomechanics</h4>
+      <div class="skill-tags">
+       <span>Rock Physics Modeling</span>
+       <span>Elastic Properties</span>
+       <span>Overpressure Characterization</span>
+       <span>Fracture Gradient</span>
+       <span>Wellbore Stability</span>
+      </div>
+     </div>
+
+     <div class="skill-detail-group">
+      <h4>Data Processing &amp; Field Operations</h4>
+      <div class="skill-tags">
+       <span>Data QC</span>
+       <span>Data Validation</span>
+       <span>Signal Processing</span>
+       <span>Numerical Modeling</span>
+       <span>Geophysical Instrumentation</span>
+       <span>Field Data Acquisition</span>
+      </div>
+     </div>
+
+     <div class="skill-detail-group">
+      <h4>Software</h4>
+      <div class="skill-tags">
+       <span>Petrel</span>
+       <span>Hampson-Russell</span>
+       <span>Oasis Montaj</span>
+       <span>VISTA</span>
+       <span>SURFER</span>
+       <span>IPI2Win</span>
+       <span>Res2DInv</span>
+       <span>Interactive Petrophysics</span>
+       <span>MATLAB</span>
+       <span>Python</span>
+       <span>Microsoft Word</span>
+       <span>Microsoft Excel</span>
+       <span>Microsoft PowerPoint</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- ===================== TRAINING & CERTIFICATION ===================== -->
+  <section id="training">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      07 &middot; Training &amp; Certification
+     </div>
+     <h2>
+      Continuous Development
+     </h2>
+    </div>
+    <div class="training-grid">
+     <!-- TRAINING / CERTIFICATION ITEM -->
+     <div class="training-card">
+      <div class="training-label">
+       TRAINING
+      </div>
+      <h3>
+       Python Programming Bootcamp from Pierian Training, Udemy
+      </h3>
+      <p>
+       Technical training in Python fundamentals and computational problem solving.
+      </p>
+      <div class="training-more">
+       <button class="more-btn" onclick="togglePanel('python-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="python-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Python Programming Training
+         </h4>
+         <p class="justify">
+          Completed a comprehensive Python 3 programming bootcamp covering fundamental to advanced programming concepts and their practical applications. The training included Python syntax and programming fundamentals, data structures, functions, file handling, automation, working with Excel and PDF files, web scraping, email automation, and image processing.
+         </p>
+         <p class="justify">
+          The bootcamp also involved coding exercises, quizzes, assignments, and hands-on projects designed to develop practical programming and problem-solving skills. Through multiple project-based activities, the training provided experience in applying Python to real-world tasks and building a practical programming portfolio.
+         </p>   
+        </div>
+        <div class="detail-image">
+         <img alt="Python certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/python-certificate.png" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/python-certificate.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- TRAINING / CERTIFICATION ITEM -->
+     <div class="training-card">
+      <div class="training-label">
+       CERTIFICATION
+      </div>
+      <h3>
+       EF SET English Certificate
+      </h3>
+      <p>
+       English proficiency certification for academic and professional communication.
+      </p>
+      <div class="training-more">
+       <button class="more-btn" onclick="togglePanel('efset-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="efset-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          EF SET (EF Standard English Test)
+         </h4>
+        <p><strong>Overall Score:</strong> 55/100 | <strong>CEFR Level:</strong> B2 – Upper Intermediate</p>
+        <p><strong>Awarded:</strong> 22 August 2026</p>
+        <p class="justify">Demonstrated B2 Upper Intermediate English proficiency, indicating the ability to communicate effectively and understand English in a range of academic and professional contexts. The assessment also demonstrated strong proficiency in reading, achieving 72/100 (C2 – Proficient), reflecting the ability to comprehend complex, technical, and professional written materials.</p>
+        <p>The assessment covered four key language competencies:</p>
+        <p><strong>• Reading:</strong> 72/100 – C2 Proficient</p>
+        <p><strong>• Listening:</strong> 49/100 – B1 Intermediate</p>
+        <p><strong>• Writing:</strong> 48/100 – B1 Intermediate</p>
+        <p><strong>• Speaking:</strong> 50/100 – B1 Intermediate</p>
+        <p class="justify">This certification demonstrates a solid foundation for professional communication, technical documentation, and working in English-speaking or internationally oriented environments.</p>
+        </div>
+        <div class="detail-image">
+         <img alt="EF SET certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/efset-certificate.png" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/efset-certificate.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="documentation">
+   <div class="container reveal">
+    <div class="section-title">
+     <div class="eyebrow">
+      08 &middot; Documentation
+     </div>
+     <h2>
+      Field &amp; Activity Documentation
+     </h2>
+     <p>
+      A visual record of selected academic, field, organizational, and professional activities.
+     </p>
+    </div>
+    <div class="documentation-carousel">
+     <button aria-label="Previous documentation" class="documentation-arrow documentation-prev" onclick="changeDocumentation(-1)" type="button">
+      &lsaquo;
+     </button>
+     <div class="documentation-frame">
+      <img alt="Portfolio documentation" aria-label="Open image in full view" class="zoomable-image" id="documentation-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/documentation-1.jpeg" tabindex="0"/>
+      <div class="documentation-placeholder" style="display:none">
+       Add images/documentation-1.jpeg
+      </div>
+      <div class="documentation-caption">
+       <span id="documentation-caption-text">
+        Documentation 01
+       </span>
+       <span id="documentation-counter">
+        1 / 10
+       </span>
+      </div>
+     </div>
+     <button aria-label="Next documentation" class="documentation-arrow documentation-next" onclick="changeDocumentation(1)" type="button">
+      &rsaquo;
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+   <div class="container reveal">
+    <div class="contact-box">
+     <div>
+      <div class="eyebrow">
+       09 &middot; Contact
+      </div>
+      <h2>
+       Let's Connect
+      </h2>
+      <p>
+       Open to opportunities in seismic interpretation, geomechanics, subsurface analysis, geophysical data processing, and the energy industry.
+      </p>
+     </div>
+     <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:muhammadnugroho195@gmail.com">
+       Email Me
+      </a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/muhammad-arry-nugroho-588460246/" target="_blank">
+       LinkedIn
+      </a>
+      <a class="btn btn-secondary" href="Muhammad Arry Nugroho-CV.pdf" target="_blank">
+       Download CV
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer>
+   <div class="container">
+    &copy; 2026 Muhammad Arry Nugroho &middot; Geophysical Engineering &middot; Institut Teknologi Bandung
+   </div>
+  </footer>
+  <script>
+   /* ==========================
+   MORE / LESS INTERACTION
+========================== */
+function togglePanel(id, button) {
+    const panel = document.getElementById(id);
+
+    if (!panel) {
+        return;
+    }
+
+    const isOpen = panel.classList.contains("active");
+
+    // Close the currently selected panel.
+    if (isOpen) {
+        panel.classList.remove("active");
+        button.textContent = "MORE ↓";
+        return;
+    }
+
+    // Keep only one expanded panel at a time.
+    document.querySelectorAll(".expand-panel.active").forEach(function(panel) {
+        panel.classList.remove("active");
+    });
+
+    document.querySelectorAll(".more-btn").forEach(function(button) {
+        button.textContent = "MORE ↓";
+    });
+
+    panel.classList.add("active");
+    button.textContent = "LESS ↑";
+}
+
+/* ==========================
+   SCROLL REVEAL
+========================== */
+const observer = new IntersectionObserver(
+    function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.12 }
+);
+
+document.querySelectorAll(".reveal").forEach(function(element) {
+    observer.observe(element);
+});
+  
+/* ==========================
+   DOCUMENTATION CAROUSEL
+========================== */
+const documentationItems = [
+    {
+        image: "images/documentation-1.jpeg",
+        title: "Aquifer Mapping"
+    },
+    {
+        image: "images/documentation-2.jpeg",
+        title: "Speaker Training Resistivity Method"
+    },
+    {
+        image: "images/documentation-3.jpeg",
+        title: "Organizational Activity"
+    },
+    {
+        image: "images/documentation-4.jpeg",
+        title: "Gravity Method Acquisition-Karangsambung"
+    },
+    {
+        image: "images/documentation-5.jpeg",
+        title: "Magnetic Acquisition-Pacitan"
+    },
+    {
+        image: "images/documentation-6.jpeg",
+        title: "Dronemagnetic Acquisition-Pacitan"
+    },
+    {
+        image: "images/documentation-7.jpeg",
+        title: "Underground Mining Field Trip-Pongkor"
+    },
+    {
+        image: "images/documentation-8.jpeg",
+        title: "IoT Based Geophysical Instrument-1"
+    },
+    {
+        image: "images/documentation-9.png",
+        title: "IoT Based Geophysical Instrument-2"
+    },
+    {
+        image: "images/documentation-10.png",
+        title: "IoT Based Geophysical Instrument-3"
+    }
+];
+let documentationIndex = 0;
+
+function renderDocumentation(){
+    const item = documentationItems[documentationIndex];
+    const image = document.getElementById("documentation-image");
+    const placeholder = image.nextElementSibling;
+    const caption = document.getElementById("documentation-caption-text");
+    const counter = document.getElementById("documentation-counter");
+
+    image.style.display = "block";
+    placeholder.style.display = "none";
+    image.src = item.image;
+    image.alt = item.title;
+    image.onerror = function(){
+        this.style.display = "none";
+        placeholder.style.display = "flex";
+        placeholder.textContent = "Add " + item.image;
+    };
+
+    caption.textContent = item.title;
+    counter.textContent = (documentationIndex + 1) + " / " + documentationItems.length;
+}
+
+function changeDocumentation(direction){
+    documentationIndex =
+        (documentationIndex + direction + documentationItems.length)
+        % documentationItems.length;
+
+    renderDocumentation();
+}
+
+renderDocumentation();
+  
+/* ==========================
+   IMAGE LIGHTBOX
+========================== */
+function openImageLightbox(image){
+    const lightbox=document.getElementById("image-lightbox");
+    const viewer=document.getElementById("lightbox-image");
+    const caption=document.getElementById("lightbox-caption");
+    if(!lightbox||!viewer)return;
+    viewer.src=image.currentSrc||image.src;
+    viewer.alt=image.alt||"Expanded portfolio image";
+    caption.textContent=image.alt||"";
+    lightbox.classList.add("active");
+    lightbox.setAttribute("aria-hidden","false");
+    document.body.style.overflow="hidden";
+}
+function closeImageLightbox(){
+    const lightbox=document.getElementById("image-lightbox");
+    const viewer=document.getElementById("lightbox-image");
+    if(!lightbox)return;
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden","true");
+    document.body.style.overflow="";
+    if(viewer)viewer.removeAttribute("src");
+}
+document.addEventListener("keydown",function(e){
+    if(e.key==="Escape")closeImageLightbox();
+});
+document.getElementById("image-lightbox").addEventListener("click",function(e){
+    if(e.target===this)closeImageLightbox();
+});
+  </script>
+  <div aria-hidden="true" class="image-lightbox" id="image-lightbox">
+   <button aria-label="Close image" class="lightbox-close" onclick="closeImageLightbox()" type="button">
+    &times;
+   </button>
+   <img alt="Expanded portfolio image" id="lightbox-image"/>
+   <div class="lightbox-caption" id="lightbox-caption">
+   </div>
+  </div>
+ </body>
+</html>
