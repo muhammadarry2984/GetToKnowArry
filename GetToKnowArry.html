@@ -71,7 +71,35 @@ to maintain.
 .institution-logo img,.timeline-logo img,.org-logo img{width:100%;height:100%;object-fit:contain}
 .org-head{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center}
 .more-row{margin-top:14px}.training-more{margin-top:16px}
-.training-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.training-card{padding:26px;background:var(--card);border:1px solid var(--border);border-radius:16px}
+.training-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.training-head{
+    display:grid;
+    grid-template-columns:72px 1fr;
+    gap:16px;
+    align-items:center;
+}
+
+.training-logo{
+    width:66px;
+    height:66px;
+    background:#091522;
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.training-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.training-title{
+    min-width:0;
+}
 .training-card p{color:var(--muted);font-size:14px;margin-top:8px}.training-label{font-size:11px;letter-spacing:1px;font-weight:800}
 .expand-panel{display:none}.expand-panel.active{display:block}
 .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding-top:22px;align-items:start;}.detail-text h4{color:var(--accent);margin-bottom:8px}.detail-text p{color:var(--muted);font-size:14px}
@@ -580,7 +608,7 @@ to maintain.
        I am passionate about continuously developing my technical skills and staying informed about the evolving challenges and technologies within the energy industry. I thrive in multidisciplinary environments, enjoy working collaboratively, and am committed to continuous learning and delivering practical, data-driven solutions.
       </p>
       <p class="justify">
-       I aspire to build my career in seismic interpretation and geomechanics within the energy industry, contributing to safer, more efficient, and better-informed subsurface exploration and development.
+       I aspire to build my career within the energy industry, with a strong interest in drilling, well control, and well intervention, while remaining open to opportunities in seismic interpretation and geomechanics. My background in geophysics, particularly in seismic interpretation and geomechanics, provides me with a strong subsurface foundation that I aim to apply across both subsurface and well operations. Through my academic work and thesis, I have developed an interest in subsurface characterization, formation pressure, and geomechanical behavior, while certifications in IWCF Level 1, IWCF Well Operations Crew Resource Management, and IADC Drilling Operations, Introductory have strengthened my foundation in drilling, well control, and well operations. Ultimately, I aim to contribute to safer, more efficient, and better-informed subsurface and well operations throughout the energy industry.
       </p>
       <div class="interest-list">
        <div class="interest">
@@ -1292,6 +1320,20 @@ to maintain.
      </div>
 
      <div class="skill-detail-group">
+      <h4>Drilling &amp; Well Control Competencies</h4>
+      <div class="skill-tags">
+       <span>Well Control Fundamental</span>
+       <span>Pressure and Well Control Calculation</span>
+       <span>Well Killing Operations</span>
+       <span>Stripping Operations</span>
+       <span>Drilling Fundamentals</span>
+       <span>Shut-In Procedures</span>
+       <span>Well Control Equipment</span>
+       <span>Drilling Mud</span>
+      </div>
+     </div>
+
+     <div class="skill-detail-group">
       <h4>Rock Physics &amp; Geomechanics</h4>
       <div class="skill-tags">
        <span>Rock Physics Modeling</span>
@@ -1311,6 +1353,17 @@ to maintain.
        <span>Numerical Modeling</span>
        <span>Geophysical Instrumentation</span>
        <span>Field Data Acquisition</span>
+      </div>
+     </div>
+
+     <div class="skill-detail-group">
+      <h4>Artificial Intelligence</h4>
+      <div class="skill-tags">
+       <span>AI Prompting</span>
+       <span>Claude Cowork</span>
+       <span>Generative AI</span>
+       <span>Claude Code</span>
+       <span>Claude Skills</span>
       </div>
      </div>
 
@@ -1347,39 +1400,124 @@ to maintain.
      </h2>
     </div>
     <div class="training-grid">
-     <!-- TRAINING / CERTIFICATION ITEM -->
+      <!-- TRAINING / CERTIFICATION ITEM -->
      <div class="training-card">
       <div class="training-label">
-       TRAINING
+       CERTIFICATION
       </div>
-      <h3>
-       Python Programming Bootcamp from Pierian Training, Udemy
-      </h3>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/IADC-logo.png"
+                alt="IADC Logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                IADC
+            </div>
+        </div>
+
+        <div class="training-title">
+            <h3>
+               Drilling Introductory, IADC WELLSHARP
+            </h3>
+     </div>
+
+</div>
       <p>
-       Technical training in Python fundamentals and computational problem solving.
+       Developed a foundational understanding of well control, drilling fluid management, pressure behavior, kick prevention and detection, and well control response procedures, providing a technical foundation for working in drilling and oil & gas operations.
       </p>
       <div class="training-more">
-       <button class="more-btn" onclick="togglePanel('python-more',this)">
+       <button class="more-btn" onclick="togglePanel('IADC-more',this)">
         MORE &darr;
        </button>
       </div>
-      <div class="expand-panel" id="python-more">
+      <div class="expand-panel" id="IADC-more">
        <div class="detail-grid">
         <div class="detail-text">
          <h4>
-          Python Programming Training
+          Drilling Introductory
          </h4>
-         <p class="justify">
-          Completed a comprehensive Python 3 programming bootcamp covering fundamental to advanced programming concepts and their practical applications. The training included Python syntax and programming fundamentals, data structures, functions, file handling, automation, working with Excel and PDF files, web scraping, email automation, and image processing.
+         <p>
+          <strong>International Association of Drilling Contractors (IADC)</strong>
+         </p>
+         <p>
+          <strong>Completed: September 2026 | Valid Until: September 2031</strong>
          </p>
          <p class="justify">
-          The bootcamp also involved coding exercises, quizzes, assignments, and hands-on projects designed to develop practical programming and problem-solving skills. Through multiple project-based activities, the training provided experience in applying Python to real-world tasks and building a practical programming portfolio.
-         </p>   
+          Completed the IADC WellSharp Drilling Operations, Introductory program, gaining foundational knowledge of well control and drilling operations with emphasis on maintaining safe wellbore pressure conditions and preventing uncontrolled formation-fluid influx.
+         </p>
+         <p class="justify">
+          <Strong>Key Competencies:</Strong>
+         </p>     
+         <p class="justify">
+          <Strong>• Well Control Fundamentals:</Strong>
+         </p>
+         <p class="justify">
+          Understanding hydrostatic pressure, formation pressure, pressure balance, and the relationship between mud weight, formation pressure, and fracture pressure.
+         </p>
+         <p class="justify">
+          <Strong>• Kick Prevention & Detection:</Strong>
+         </p>  
+         <p class="justify">
+         Understanding kick mechanisms and identifying early indicators such as unexpected pit gain, flow with pumps off, and changes in flow rate.
+         </p>  
+         <p class="justify">
+          <Strong>• Shut-In Procedures:</Strong>
+         </p>  
+         <p class="justify">
+          Understanding basic hard and soft shut-in procedures and the role of shut-in pressure data in well control operations.
+         </p>  
+         <p class="justify">
+          <Strong>• Drilling Fluids:</Strong>
+         </p>  
+         <p class="justify">
+          Understanding the functions and characteristics of drilling fluids, including mud weight, viscosity, gel strength, filtration loss, and their relationship to well control and wellbore stability.
+         </p>  
+         <p class="justify">
+          <Strong>• Pressure & Well Control Calculations:</Strong>
+         </p>  
+         <p class="justify">
+          Applying fundamental calculations involving hydrostatic pressure, well volume, pressure relationships, MAASP, and related drilling parameters.
+         </p>  
+         <p class="justify">
+          <Strong>• Well Killing Operations:</Strong>
+         </p>  
+         <p class="justify">
+          Introduction to methods and procedures used to circulate formation influx out of the well and restore primary well control.
+         </p>
+         <p class="justify">
+          <Strong>• Stripping Operations:</Strong>
+         </p>  
+         <p class="justify">
+          Understanding pressure and volume management during stripping operations, with emphasis on maintaining constant bottomhole pressure.
+         </p>  
+         <p class="justify">
+          <Strong>• Well Control Equipment:</Strong>
+         </p>  
+         <p class="justify">
+          Understanding the function of BOP systems and their role as a secondary well barrier when primary well control is compromised.
+         </p>  
+         <p class="justify">
+          <Strong>• Subsea Well Control:</Strong>
+         </p>  
+         <p class="justify">
+          Introduction to well control considerations in subsea drilling environments, including differences between surface and subsea BOP systems.
+         </p>  
+         <p class="justify">
+          <Strong>• Abnormal Pressure Awareness:</Strong>
+         </p>  
+         <p class="justify">
+          Understanding abnormal formation pressure and its implications for kick risk during drilling operations.
+         </p>    
+         
         </div>
         <div class="detail-image">
-         <img alt="Python certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/python-certificate.png" tabindex="0"/>
+         <img alt="IADC Introductory-certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/IADC Introductory-certificate.png" tabindex="0"/>
          <div class="image-placeholder" style="display:none">
-          Add images/python-certificate.jpeg
+          Add images/IADC Introductory-certificate.png
          </div>
         </div>
        </div>
@@ -1390,72 +1528,88 @@ to maintain.
       <div class="training-label">
        CERTIFICATION
       </div>
-      <h3>
-       EF SET English Certificate
-      </h3>
-      <p>
-       English proficiency certification for academic and professional communication.
-      </p>
-      <div class="training-more">
-       <button class="more-btn" onclick="togglePanel('efset-more',this)">
-        MORE &darr;
-       </button>
-      </div>
-      <div class="expand-panel" id="efset-more">
-       <div class="detail-grid">
-        <div class="detail-text">
-         <h4>
-          EF SET (EF Standard English Test)
-         </h4>
-        <p><strong>Overall Score:</strong> 65/100 | <strong>CEFR Level:</strong> C1 – Advanced</p>
-        <p><strong>Awarded:</strong> 24 August 2026</p>
-        <p class="justify">Demonstrated C1 Advanced English proficiency, reflecting the ability to effectively understand and communicate in a wide range of academic and professional contexts. The assessment demonstrated particularly strong comprehension skills, achieving C2 Proficient in Reading (85/100) and C1 Advanced in Listening (64/100).</p>
-        <p>The assessment covered four key language competencies:</p>
-        <p><strong>• Reading:</strong> 85/100 – C2 Proficient</p>
-        <p><strong>• Listening:</strong> 64/100 – C1 Advanced</p>
-        <p><strong>• Writing:</strong> 55/100 – B2 Upper Intermediate</p>
-        <p><strong>• Speaking:</strong> 55/100 – B2 Upper Intermediate</p>
-        <p class="justify">This certification demonstrates the ability to understand technical and professional materials, participate in workplace discussions, communicate ideas effectively, and work in an international or English-speaking professional environment.</p>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/IWCF-logo.png"
+                alt="IWCF Logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                IWCF
+            </div>
         </div>
-        <div class="detail-image">
-         <img alt="EF SET certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/efset-certificate2.png" tabindex="0"/>
-         <div class="image-placeholder" style="display:none">
-          Add images/efset-certificate.jpeg
-         </div>
+
+        <div class="training-title">
+            <h3>
+               Level 1 Programme, IWCF
+            </h3>
         </div>
-       </div>
-      </div>
      </div>
-     <!-- TRAINING / CERTIFICATION ITEM -->
-     <div class="training-card">
-      <div class="training-label">
-       TRAINING
-      </div>
-      <h3>
-       Training Reservoir Engineering for Non Reservoir Engineers
-      </h3>
       <p>
-       The training strengthened my understanding of reservoir behavior and production fundamentals, supporting my broader knowledge of the upstream oil and gas industry.
+       Built a comprehensive foundation in well operations and well control, connecting the complete well life cycle with drilling equipment, pressure management, well barriers, intervention activities, and operational safety.
       </p>
       <div class="training-more">
-       <button class="more-btn" onclick="togglePanel('Reservoir-more',this)">
+       <button class="more-btn" onclick="togglePanel('level1-more',this)">
         MORE &darr;
        </button>
       </div>
-      <div class="expand-panel" id="Reservoir-more">
+      <div class="expand-panel" id="level1-more">
        <div class="detail-grid">
         <div class="detail-text">
          <h4>
-          Reservoir Engineering Training
+          Level 1 Programme
          </h4>
          <p class="justify">
-          Completed a training on Reservoir Engineering for Non-Reservoir Engineers, covering fundamental concepts of reservoir engineering, including reservoir rock properties, PVT and fluid properties, reservoir drive mechanisms, reserves estimation, hydrocarbon recovery stages, and well performance & productivity.
+          Successfully completed the IWCF Level 1 Programme (English), providing a foundational understanding of the oil and gas industry, well life cycle, drilling operations, well control, well intervention, and pressure control. The programme developed fundamental knowledge of how wells are planned, drilled, controlled, operated, intervened, and ultimately abandoned, with particular emphasis on maintaining safe and controlled well operations.
+         </p>
+         <p class="justify">
+          <Strong>Training Modules:</Strong>
+         </p>     
+         <p class="justify">
+          <Strong>• Module 1: An Overview of Oil and Gas</Strong>
+         </p>
+         <p class="justify">
+          Explored the fundamentals of the oil and gas industry, including the origins and development of the industry, hydrocarbon formation, geological significance, hydrocarbon occurrence, and methods used to find oil and gas.
+         </p>
+         <p class="justify">
+          <Strong>• Module 2: Life Cycle of a Well</Strong>
          </p>  
+         <p class="justify">
+         Developed an understanding of the complete life cycle of a development well, from initial drilling through casing and cementing, well intervention, workover, and final plugging and abandonment.
+         </p>  
+         <p class="justify">
+          <Strong>• Module 3: Drilling Rigs</Strong>
+         </p>  
+         <p class="justify">
+          Learned the fundamentals of drilling rigs, including their types, major components, drilling equipment, operating environments, and well control equipment used during drilling operations.
+         </p>  
+         <p class="justify">
+          <Strong>• Module 4: Well Control During Drilling Operations</Strong>
+         </p>  
+         <p class="justify">
+          Studied fundamental well control principles, including formation pressure control through drilling fluid, kick mechanisms, kick detection, initial response to a kick, well securing procedures, and key personnel roles and responsibilities during a well control event.
+         </p>  
+         <p class="justify">
+          <Strong>• Module 5: Well Intervention and Workover</Strong>
+         </p>  
+         <p class="justify">
+          Explored the purpose and execution of well intervention and workover operations, including completion/production string components, their functions, and the reasons for performing intervention and workover activities.
+         </p>  
+         <p class="justify">
+          <Strong>• Module 6: Pressure Control During Well Intervention</Strong>
+         </p>  
+         <p class="justify">
+          Developed an understanding of pressure control during well intervention, including potential well control problems, well barriers, initial actions during a well control situation, plugging and abandonment, and the roles and responsibilities of personnel when a primary barrier fails.
+         </p>  
+         
         </div>
         <div class="detail-image">
-         <img alt="Reservoir Engineering Training certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/Reservoir Engineer for Non Reservoir Engineer-certificate.png" tabindex="0"/>
+         <img alt="level 1 certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/IWCF Level 1 Programme-certificate.png" tabindex="0"/>
          <div class="image-placeholder" style="display:none">
-          Add images/Reservoir Engineer for Non Reservoir Engineer-certificate.jpeg
+          Add images/level 1-certificate.png
          </div>
         </div>
        </div>
@@ -1466,9 +1620,26 @@ to maintain.
       <div class="training-label">
        CERTIFICATION
       </div>
-      <h3>
-       Well Operations Crew Resource Management, IWCF
-      </h3>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/IWCF-logo.png"
+                alt="IWCF Logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                IWCF
+            </div>
+        </div>
+
+        <div class="training-title">
+            <h3>
+               Well Operations Crew Resource Management, IWCF
+            </h3>
+        </div>
+     </div>
       <p>
        The training strengthened my understanding of human factors and effective crew coordination in maintaining operational safety, situational awareness, and well control during well operations.
       </p>
@@ -1538,73 +1709,350 @@ to maintain.
      <!-- TRAINING / CERTIFICATION ITEM -->
      <div class="training-card">
       <div class="training-label">
-       CERTIFICATION
+       TRAINING
       </div>
-      <h3>
-       Level 1 Programme, IWCF
-      </h3>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/Alpha Petroleum Indonesia-logo.png"
+                alt="Alpha Petroleum Indonesia Logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                Alpha Petroleum Indonesia
+            </div>
+        </div>
+
+        <div class="training-title">
+            <h3>
+               Training Reservoir Engineering for Non Reservoir Engineers
+            </h3>
+        </div>
+     </div>
       <p>
-       Built a comprehensive foundation in well operations and well control, connecting the complete well life cycle with drilling equipment, pressure management, well barriers, intervention activities, and operational safety.
+       The training strengthened my understanding of reservoir behavior and production fundamentals, supporting my broader knowledge of the upstream oil and gas industry.
       </p>
       <div class="training-more">
-       <button class="more-btn" onclick="togglePanel('level1-more',this)">
+       <button class="more-btn" onclick="togglePanel('Reservoir-more',this)">
         MORE &darr;
        </button>
       </div>
-      <div class="expand-panel" id="level1-more">
+      <div class="expand-panel" id="Reservoir-more">
        <div class="detail-grid">
         <div class="detail-text">
          <h4>
-          Level 1 Programme
+          Reservoir Engineering Training
          </h4>
          <p class="justify">
-          Successfully completed the IWCF Level 1 Programme (English), providing a foundational understanding of the oil and gas industry, well life cycle, drilling operations, well control, well intervention, and pressure control. The programme developed fundamental knowledge of how wells are planned, drilled, controlled, operated, intervened, and ultimately abandoned, with particular emphasis on maintaining safe and controlled well operations.
+          Completed a training on Reservoir Engineering for Non-Reservoir Engineers, covering fundamental concepts of reservoir engineering, including reservoir rock properties, PVT and fluid properties, reservoir drive mechanisms, reserves estimation, hydrocarbon recovery stages, and well performance & productivity.
+         </p>  
+        </div>
+        <div class="detail-image">
+         <img alt="Reservoir Engineering Training certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/Reservoir Engineer for Non Reservoir Engineer-certificate.png" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/Reservoir Engineer for Non Reservoir Engineer-certificate.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- TRAINING / CERTIFICATION ITEM -->
+     <div class="training-card">
+      <div class="training-label">
+       CERTIFICATION
+      </div>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/EF SET-logo.png"
+                alt="EF SET Logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                EF SET
+            </div>
+        </div>
+
+        <div class="training-title">
+            <h3>
+               EF SET English Certificate
+            </h3>
+        </div>
+     </div>
+      <p>
+       English proficiency certification for academic and professional communication.
+      </p>
+      <div class="training-more">
+       <button class="more-btn" onclick="togglePanel('efset-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="efset-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          EF SET (EF Standard English Test)
+         </h4>
+        <p><strong>Overall Score:</strong> 65/100 | <strong>CEFR Level:</strong> C1 – Advanced</p>
+        <p><strong>Awarded:</strong> 24 August 2026</p>
+        <p class="justify">Demonstrated C1 Advanced English proficiency, reflecting the ability to effectively understand and communicate in a wide range of academic and professional contexts. The assessment demonstrated particularly strong comprehension skills, achieving C2 Proficient in Reading (85/100) and C1 Advanced in Listening (64/100).</p>
+        <p>The assessment covered four key language competencies:</p>
+        <p><strong>• Reading:</strong> 85/100 – C2 Proficient</p>
+        <p><strong>• Listening:</strong> 64/100 – C1 Advanced</p>
+        <p><strong>• Writing:</strong> 55/100 – B2 Upper Intermediate</p>
+        <p><strong>• Speaking:</strong> 55/100 – B2 Upper Intermediate</p>
+        <p class="justify">This certification demonstrates the ability to understand technical and professional materials, participate in workplace discussions, communicate ideas effectively, and work in an international or English-speaking professional environment.</p>
+        </div>
+        <div class="detail-image">
+         <img alt="EF SET certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/efset-certificate2.png" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/efset-certificate.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- TRAINING / CERTIFICATION ITEM -->
+     <div class="training-card">
+      <div class="training-label">
+       TRAINING
+      </div>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/Udemy-Logo.png"
+                alt="Udemy Logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                Python Udemy
+            </div>
+        </div>
+
+        <div class="training-title">
+            <h3>
+               Python Programming Bootcamp from Pierian Training, Udemy
+            </h3>
+        </div>
+     </div>
+      <p>
+       Technical training in Python fundamentals and computational problem solving.
+      </p>
+      <div class="training-more">
+       <button class="more-btn" onclick="togglePanel('python-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="python-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Python Programming Training
+         </h4>
+         <p class="justify">
+          Completed a comprehensive Python 3 programming bootcamp covering fundamental to advanced programming concepts and their practical applications. The training included Python syntax and programming fundamentals, data structures, functions, file handling, automation, working with Excel and PDF files, web scraping, email automation, and image processing.
          </p>
          <p class="justify">
-          <Strong>Training Modules:</Strong>
+          The bootcamp also involved coding exercises, quizzes, assignments, and hands-on projects designed to develop practical programming and problem-solving skills. Through multiple project-based activities, the training provided experience in applying Python to real-world tasks and building a practical programming portfolio.
+         </p>   
+        </div>
+        <div class="detail-image">
+         <img alt="Python certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/python-certificate.png" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/python-certificate.jpeg
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- TRAINING / CERTIFICATION ITEM -->
+     <div class="training-card">
+      <div class="training-label">
+       TRAINING
+      </div>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/anthropic-logo.png"
+                alt="anthropic logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                Anthropic
+            </div>
+        </div>
+
+        <div class="training-title">
+            <h3>
+               Claude 101, Anthrophic Claude Academy
+            </h3>
+        </div>
+     </div>
+      <p>
+       Developed a practical foundation for integrating Generative AI and Claude into professional workflows, with an emphasis on improving productivity, research, problem-solving, and task automation.
+      </p>
+      <div class="training-more">
+       <button class="more-btn" onclick="togglePanel('Claude101-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="Claude101-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          Claude 101 – AI Productivity & Workflow Training
+         </h4>
+         <p>
+          <strong>International Association of Drilling Contractors (IADC)</strong>
+         </p>
+         <p class="justify">
+          Completed Claude 101, an introductory training focused on effectively integrating Claude into everyday and professional workflows. The training developed practical skills in prompt engineering, AI-assisted problem solving, workflow organization, knowledge integration, and research.
+         </p>
+         <p class="justify">
+          <Strong>Key Competencies:</Strong>
          </p>     
          <p class="justify">
-          <Strong>• Module 1: An Overview of Oil and Gas</Strong>
+          <Strong>• Prompt Engineering:</Strong>
          </p>
          <p class="justify">
-          Explored the fundamentals of the oil and gas industry, including the origins and development of the industry, hydrocarbon formation, geological significance, hydrocarbon occurrence, and methods used to find oil and gas.
+          Writing clear and effective prompts, refining prompts based on results, and applying AI Fluency principles to improve outputs.
          </p>
          <p class="justify">
-          <Strong>• Module 2: Life Cycle of a Well</Strong>
+          <Strong>• AI Workflow Management:</Strong>
          </p>  
          <p class="justify">
-         Developed an understanding of the complete life cycle of a development well, from initial drilling through casing and cementing, well intervention, workover, and final plugging and abandonment.
+         Understanding different approaches to working with Claude, including turn-by-turn interaction, task delegation, and software-building workflows.
          </p>  
          <p class="justify">
-          <Strong>• Module 3: Drilling Rigs</Strong>
+          <Strong>• Claude Projects, Artifacts & Skills:</Strong>
          </p>  
          <p class="justify">
-          Learned the fundamentals of drilling rigs, including their types, major components, drilling equipment, operating environments, and well control equipment used during drilling operations.
+          Organizing context and creating reusable AI-assisted workflows for more consistent and efficient results.
          </p>  
          <p class="justify">
-          <Strong>• Module 4: Well Control During Drilling Operations</Strong>
+          <Strong>• Knowledge & Research Integration:</Strong>
          </p>  
          <p class="justify">
-          Studied fundamental well control principles, including formation pressure control through drilling fluid, kick mechanisms, kick detection, initial response to a kick, well securing procedures, and key personnel roles and responsibilities during a well control event.
+          Using Connectors, Enterprise Search, and Research to work with external tools, organizational knowledge, and web-based information.
          </p>  
          <p class="justify">
-          <Strong>• Module 5: Well Intervention and Workover</Strong>
+          <Strong>• AI for Professional Applications:</Strong>
          </p>  
          <p class="justify">
-          Explored the purpose and execution of well intervention and workover operations, including completion/production string components, their functions, and the reasons for performing intervention and workover activities.
+          Exploring role-based applications of Claude across different professional tasks.
          </p>  
          <p class="justify">
-          <Strong>• Module 6: Pressure Control During Well Intervention</Strong>
+          <Strong>• AI Development Tools:</Strong>
          </p>  
          <p class="justify">
-          Developed an understanding of pressure control during well intervention, including potential well control problems, well barriers, initial actions during a well control situation, plugging and abandonment, and the roles and responsibilities of personnel when a primary barrier fails.
-         </p>  
+          Introduction to Claude Code and other Claude ecosystem tools for software development and productivity.
+         </p> 
          
         </div>
         <div class="detail-image">
-         <img alt="level 1 certificate" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/IWCF Level 1 Programme-certificate.png" tabindex="0"/>
+         <img alt="Muhammad Arry Nugroho_Claude 101" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/Muhammad Arry Nugroho_Claude 101.jpg" tabindex="0"/>
          <div class="image-placeholder" style="display:none">
-          Add images/level 1-certificate.png
+          Add images/Claude 101-certificate.png
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- TRAINING / CERTIFICATION ITEM -->
+     <div class="training-card">
+      <div class="training-label">
+       TRAINING
+      </div>
+      <div class="training-head">
+
+        <div class="training-logo">
+            <img 
+                src="images/anthropic-logo.png"
+                alt="anthropic logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            >
+
+            <div class="image-placeholder" style="display:none">
+                Anthropic
+            </div>
+        </div>
+
+        <div class="training-title">
+            <h3>
+               AI Capabilities and Limitations, Anthrophic Claude Academy
+            </h3>
+        </div>
+     </div>
+      <p>
+       Developed a stronger foundation in AI literacy, critical evaluation of AI outputs, and responsible AI utilization, with the ability to recognize both the strengths and limitations of generative AI when applying it to professional and technical workflows.
+      </p>
+      <div class="training-more">
+       <button class="more-btn" onclick="togglePanel('AI Capabilities and Limitations-more',this)">
+        MORE &darr;
+       </button>
+      </div>
+      <div class="expand-panel" id="AI Capabilities and Limitations-more">
+       <div class="detail-grid">
+        <div class="detail-text">
+         <h4>
+          AI Capabilities and Limitations
+         </h4>
+         <p class="justify">
+          Completed training focused on understanding the capabilities, limitations, and behavioral characteristics of generative AI systems. The course provided a conceptual foundation for evaluating AI outputs, understanding why models fail, and determining appropriate strategies for improving reliability.
+         </p>
+         <p class="justify">
+          <Strong>Key Competencies:</Strong>
+         </p>     
+         <p class="justify">
+          <Strong>• Generative AI Fundamentals:</Strong>
+         </p>
+         <p class="justify">
+          Understanding the distinction between generative AI, classification, and prediction AI, including the core capability-to-limitation dimensions of AI systems.
+         </p>
+         <p class="justify">
+          <Strong>• AI Training & Behavior:</Strong>
+         </p>  
+         <p class="justify">
+         Understanding pretraining and fine-tuning processes and how they influence model behavior and output characteristics.
+         </p>  
+         <p class="justify">
+          <Strong>• Model Limitations:</Strong>
+         </p>  
+         <p class="justify">
+          Understanding knowledge cutoffs, training coverage, context-window limitations, and their impact on AI-generated responses.
+         </p>  
+         <p class="justify">
+          <Strong>• AI Reliability:</Strong>
+         </p>  
+         <p class="justify">
+          Identifying hallucinations/fabrication, reasoning drift, instruction-following limitations, and other common AI failure modes.
+         </p>  
+         <p class="justify">
+          <Strong>• Context Management:</Strong>
+         </p>  
+         <p class="justify">
+          Applying strategies such as front-loading, chunking, and re-supplying critical information to improve AI performance.
+         </p>  
+         <p class="justify">
+          <Strong>• AI Evaluation & Trust:</Strong>
+         </p>  
+         <p class="justify">
+          Diagnosing AI failures, identifying conflicting capabilities, and applying a framework for developing calibrated trust in AI systems.
+         </p> 
+         
+        </div>
+        <div class="detail-image">
+         <img alt=Muhammad Arry Nugroho_AI Capabilities and Limitation" aria-label="Open image in full view" class="zoomable-image" onclick="openImageLightbox(this)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this)}" role="button" src="images/Muhammad Arry Nugroho_AI Capabilities and Limitation.jpg" tabindex="0"/>
+         <div class="image-placeholder" style="display:none">
+          Add images/Muhammad Arry Nugroho_AI Capabilities and Limitation.png
          </div>
         </div>
        </div>
